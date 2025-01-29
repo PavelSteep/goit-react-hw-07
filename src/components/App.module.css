@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f9f9f9;
+  --border-color: #e0e0e0;
+  --text-color: #333;
+  --heading-color: #222;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-container > * {
+  margin-bottom: 20px;
+}
+
+.app-container > *:last-child {
+  margin-bottom: 0;
+}
