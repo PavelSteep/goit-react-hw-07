@@ -1,14 +1,13 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { changeFilter } from '../../redux/contactsSlice';
+import { setFilter } from '../../redux/contactsSlice';
 import css from './SearchBox.module.css';
 
 const SearchBox = () => {
   const dispatch = useDispatch();
 
-
   const handleChange = event => {
-    dispatch(changeFilter(event.target.value));
+    dispatch(setFilter(event.target.value));
   };
 
   return (
